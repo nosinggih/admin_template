@@ -1,0 +1,35 @@
+---
+layout: layouts/auth.njk
+title: Masuk ke Akun Anda
+---
+<div class="text-center mb-4">
+  <a href="/" class="h3 fw-bold text-decoration-none text-body">
+    <span class="text-primary me-2">{% icon "layout-dashboard" %}</span>
+    <span>{{ site.name }}</span>
+  </a>
+  <p class="text-muted small mt-2">Masuk untuk mengelola dashboard admin Anda</p>
+</div>
+
+<form action="/" method="get">
+  <div class="mb-3">
+    <label class="form-label">Alamat Email</label>
+    <input type="email" class="form-control" placeholder="nama@domain.com" required value="admin@demo.com">
+  </div>
+  <div class="mb-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <label class="form-label mb-0">Kata Sandi</label>
+      <a href="/auth/forgot-password/" class="small text-decoration-none">Lupa password?</a>
+    </div>
+    <input type="password" class="form-control mt-1" required value="password123">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="rememberMe" checked>
+    <label class="form-check-label small" for="rememberMe">Ingat saya di perangkat ini</label>
+  </div>
+  <button type="submit" class="btn btn-primary w-100 py-2">Masuk ke Akun</button>
+</form>
+
+<div class="text-center mt-4">
+  <span class="small text-muted">Belum punya akun?</span>
+  <a href="/auth/register/" class="small fw-bold text-decoration-none ms-1">Daftar sekarang</a>
+</div>

@@ -1,0 +1,38 @@
+{
+  "name": "admin-template",
+  "version": "0.1.0",
+  "description": "Admin dashboard template berbasis Bootstrap 5",
+  "private": true,
+  "main": "src/js/app.js",
+  "scripts": {
+    "build:html": "eleventy",
+    "build:css": "sass --load-path=node_modules src/scss/app.scss dist/css/app.css",
+    "build:css-min": "sass --load-path=node_modules src/scss/app.scss dist/css/app.css --style=compressed",
+    "build:js": "esbuild src/js/app.js --bundle --outfile=dist/js/app.js",
+    "build:js-min": "esbuild src/js/app.js --bundle --minify --outfile=dist/js/app.js",
+    "build": "run-s build:html build:css-min build:js-min",
+    "watch:css": "sass --load-path=node_modules src/scss/app.scss dist/css/app.css --watch",
+    "watch:js": "esbuild src/js/app.js --bundle --outfile=dist/js/app.js --watch",
+    "serve": "eleventy --serve",
+    "dev": "run-s build:css build:js --parallel watch:css watch:js serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nosinggih/admin_template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@tabler/icons": "^3.45.0",
+    "apexcharts": "^3.54.1",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "esbuild": "^0.21.5",
+    "npm-run-all": "^4.1.5",
+    "sass": "1.77"
+  }
+}

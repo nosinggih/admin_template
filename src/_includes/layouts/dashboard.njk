@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+---
+<div class="at-layout">
+  {% include "partials/sidebar.njk" %}
+  <div class="at-content">
+    {% include "partials/navbar.njk" %}
+    <main class="container-fluid py-3">
+      {% include "partials/page-header.njk" %}
+      {{ content | safe }}
+    </main>
+    {% include "partials/footer.njk" %}
+  </div>
+</div>

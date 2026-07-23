@@ -1,0 +1,22 @@
+<div class="page-header mb-3">
+  <div class="row align-items-center justify-content-between">
+    <div class="col">
+      <h1 class="h3 fw-bold mb-1">{{ title }}</h1>
+      {% if breadcrumb %}
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 small">
+          {% for crumb in breadcrumb %}
+          <li class="breadcrumb-item {% if loop.last %}active{% endif %}">
+            {% if crumb.url and not loop.last %}
+              <a href="{{ crumb.url }}" class="text-decoration-none">{{ crumb.label }}</a>
+            {% else %}
+              <span>{{ crumb.label }}</span>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      </nav>
+      {% endif %}
+    </div>
+  </div>
+</div>

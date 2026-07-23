@@ -1,0 +1,21 @@
+// Token Kustom & Custom Dark Mode adjustments
+
+// Font-face Inter (self-hosted via @fontsource/inter)
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin-variable-full-normal.woff2') format('woff2');
+}
+
+// Global Dark Mode Theme adjustments via data-bs-theme
+[data-bs-theme="dark"] {
+  --at-body-bg: #0f172a;
+  --at-card-bg: #1e293b;
+  --at-border-color: #334155;
+  
+  body {
+    background-color: var(--at-body-bg);
+  }
+}
