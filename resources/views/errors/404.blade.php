@@ -1,0 +1,12 @@
+@extends('layouts.auth')
+
+@section('auth_content')
+<div class="text-center py-4">
+  <div class="display-1 fw-bold text-primary mb-2">404</div>
+  <h4 class="fw-bold mb-2">Halaman Tidak Ditemukan</h4>
+  <p class="text-muted small mb-4">Maaf, halaman yang Anda cari mungkin telah dihapus atau alamat URL salah.</p>
+  <a href="/" class="btn btn-primary">
+    <x-icon name="arrow-left" /> Kembali ke Dashboard
+  </a>
+</div>
+@endsection

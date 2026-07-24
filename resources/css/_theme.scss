@@ -1,0 +1,63 @@
+// Token Kustom & Custom Dark Mode adjustments
+
+// Font-face Inter (self-hosted via @fontsource/inter)
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/inter/inter-latin-300-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter/inter-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/inter/inter-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/inter/inter-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/inter/inter-latin-700-normal.woff2') format('woff2');
+}
+
+
+// Global Dark Mode Theme adjustments via data-bs-theme
+[data-bs-theme="dark"] {
+  --at-body-bg: #0f172a;
+  --at-card-bg: #1e293b;
+  --at-border-color: #334155;
+  
+  // Override standard Bootstrap dark mode CSS variables
+  --bs-body-bg: #0f172a;
+  --bs-body-bg-rgb: 15, 23, 42;
+  --bs-body-color: #f8fafc;
+  --bs-body-color-rgb: 248, 250, 252;
+  --bs-card-bg: #1e293b;
+  --bs-border-color: #334155;
+  --bs-card-border-color: #334155;
+  --bs-secondary-bg: #1e293b;
+  --bs-tertiary-bg: #0f172a;
+  
+  body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+  }
+}
+

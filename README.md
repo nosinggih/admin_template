@@ -1,121 +1,66 @@
-# Admin Template (Bootstrap 5)
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-> Admin Dashboard Template open-source modern, responsif, dan kaya komponen berbasis **Bootstrap 5.3**, **Eleventy (11ty)**, **Dart Sass**, **esbuild**, **Tabler Icons**, dan **ApexCharts**.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
----
+## About Laravel
 
-## ✨ Fitur Utama
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- 🎨 **Design System Modern:** Berbasis Bootstrap 5.3 dengan override token warna disesuaikan (Primary `#206bc4`).
-- 🌙 **Dark Mode Bawaan:** Integrasi native atribut `data-bs-theme="light|dark"` dengan persistensi `localStorage` tanpa FOUT (*Flash of Unstyled Theme*).
-- 🧩 **Modular Templating:** Shell dashboard (sidebar, navbar, footer) dibuat sekali menggunakan partials Nunjucks.
-- 📊 **Tampilan Data & Charts:** ApexCharts terintegrasi dengan penyesuaian otomatis saat toggle mode gelap.
-- ⚡ **Bundler Cepat:** SCSS dikompilasi via Dart Sass & JS via esbuild tanpa React/Vue/jQuery dependencies berat.
-- 📱 **100% Responsif:** Diuji rapi pada breakpoint 375px (Mobile), 768px (Tablet), dan 1440px (Desktop).
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
----
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 📁 Struktur Direktori
+## Learning Laravel
 
-```
-admin-template/
-├── .eleventy.js               # Konfigurasi Eleventy 11ty
-├── package.json               # Dependensi & NPM scripts
-├── README.md                  # Dokumentasi proyek
-├── LICENSE                    # Lisensi MIT
-├── src/
-│   ├── _data/
-│   │   ├── site.json          # Metadata situs (nama, versi)
-│   │   └── nav.js             # Single source of truth menu sidebar
-│   ├── _includes/
-│   │   ├── layouts/
-│   │   │   ├── base.njk       # HTML base shell
-│   │   │   ├── dashboard.njk  # Layout dashboard utama
-│   │   │   └── auth.njk       # Layout auth minimal
-│   │   └── partials/
-│   │       ├── sidebar.njk    # Render menu dinamis
-│   │       ├── navbar.njk     # Header & toggle mode
-│   │       ├── footer.njk     # Footer halaman
-│   │       └── page-header.njk # Judul & breadcrumb
-│   ├── scss/
-│   │   ├── _variables.scss    # Override variabel Bootstrap
-│   │   ├── _theme.scss        # Dark mode & token custom
-│   │   ├── _components.scss   # Komponen kustom (prefiks at-)
-│   │   └── app.scss           # SCSS entry point
-│   ├── js/
-│   │   ├── app.js             # JS entry point bundle
-│   │   └── modules/           # Modul JS (theme, sidebar, charts, datatable)
-│   └── pages/                 # Halaman Nunjucks (.njk)
-│       ├── index.njk          # Dashboard utama
-│       ├── dashboard-analytics.njk
-│       ├── auth/              # Halaman Login, Register, Lupa Password
-│       ├── errors/            # Halaman 404, 500, Maintenance
-│       ├── components/        # Showcase komponen UI dasar
-│       ├── forms/             # Showcase form & input
-│       ├── tables/            # Showcase tabel & stat cards
-│       ├── users/             # Trio CRUD Pengguna (list, detail, form)
-│       └── charts/            # ApexCharts showcase
-└── dist/                      # Output build siap rilis (auto-generated)
-```
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
----
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-## 🚀 Panduan Penggunaan
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-### 1. Prasyarat
-- Node.js versi LTS (>= 20.0)
-- npm (Node Package Manager)
+## Laravel Sponsors
 
-### 2. Instalasi
-```bash
-# Clone repository
-git clone https://github.com/nosinggih/admin_template.git
-cd admin_template
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-# Install dependensi
-npm install
-```
+### Premium Partners
 
-### 3. Mode Pengembang (Development)
-Menjalankan watch SCSS, JS, dan Eleventy dev server dengan live-reload:
-```bash
-npm run dev
-# atau
-npm run serve
-```
-Buka browser Anda di `http://localhost:8080/`.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-### 4. Build Produksi
-Kompilasi dan minifikasi file untuk produksi:
-```bash
-npm run build
-```
-Hasil build produksi akan tersimpan di folder `dist/` dan dapat didistribusikan ke server mana pun.
+## Contributing
 
----
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## 📝 Cara Menambah Halaman Baru
+## Code of Conduct
 
-1. Buat file `.njk` baru di dalam folder `src/pages/` (misalnya `src/pages/laporan.njk`).
-2. Tentukan layout dan metadata di bagian front matter:
-   ```njk
-   ---
-   layout: layouts/dashboard.njk
-   title: Laporan Bulanan
-   breadcrumb:
-     - { label: "Home", url: "/" }
-     - { label: "Laporan" }
-   ---
-   <div class="card">
-     <div class="card-body">
-       <!-- Konten Anda di sini -->
-     </div>
-   </div>
-   ```
-3. Tambahkan tautan menu baru ke dalam `src/_data/nav.js` jika ingin ditampilkan pada sidebar.
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
----
+## Security Vulnerabilities
 
-## 📜 Lisensi
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-Lisensi under [MIT License](LICENSE).
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
