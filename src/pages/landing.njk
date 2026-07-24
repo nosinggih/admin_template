@@ -1,0 +1,395 @@
+---
+layout: layouts/base.njk
+title: Landing Page Pemasaran
+---
+<div class="at-landing text-body bg-body">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body border-bottom sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="p-2 bg-primary text-white rounded d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+          {% icon "brand-bootstrap", { class: "icon-sm" } %}
+        </span>
+        <span class="font-bold text-body">AdminTemplate</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLanding" aria-controls="navbarLanding" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarLanding">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+          <li class="nav-item"><a class="nav-link font-semibold text-muted" href="#fitur">Fitur</a></li>
+          <li class="nav-item"><a class="nav-link font-semibold text-muted" href="#showcase">Demo</a></li>
+          <li class="nav-item"><a class="nav-link font-semibold text-muted" href="#harga">Harga</a></li>
+          <li class="nav-item"><a class="nav-link font-semibold text-muted" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link font-semibold text-muted" href="#faq">FAQ</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <!-- Tombol kembali/masuk dashboard -->
+          <a href="/" class="btn btn-primary d-flex align-items-center gap-2">
+            <span>Masuk Dashboard</span>
+            {% icon "arrow-right", { class: "icon-sm" } %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="at-landing-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <span class="badge bg-primary-subtle text-primary border-primary-subtle border px-3 py-2 mb-3 rounded-pill font-bold">Premium Admin Template</span>
+          <h1 class="display-4 font-bold text-body mb-3 lh-sm">Membangun Web App Lebih Cepat & Ringan</h1>
+          <p class="lead text-muted mb-4">Template dashboard modern berbasis Bootstrap 5.3.3. Menggunakan arsitektur Nunjucks & Eleventy murni untuk performa pemuatan super cepat tanpa jQuery.</p>
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+            <a href="#showcase" class="btn btn-primary btn-lg px-4 font-semibold">Lihat Demo Showcase</a>
+            <a href="/" class="btn btn-outline-secondary btn-lg px-4 font-semibold">Coba Dashboard</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- CSS Mockup Dashboard Representatif yang Interaktif -->
+          <div class="at-landing-mockup bg-body p-3">
+            <!-- Mockup Header -->
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+              <div class="d-flex align-items-center gap-1">
+                <span class="d-inline-block rounded-circle bg-danger" style="width: 8px; height: 8px;"></span>
+                <span class="d-inline-block rounded-circle bg-warning" style="width: 8px; height: 8px;"></span>
+                <span class="d-inline-block rounded-circle bg-success" style="width: 8px; height: 8px;"></span>
+              </div>
+              <div class="bg-light text-muted small px-3 py-1 rounded" style="font-size: 10px; width: 60%; text-align: center;">https://localhost:8080/dashboard</div>
+              <div style="width: 24px;"></div>
+            </div>
+            <!-- Mockup Body (Layout Dashboard Sederhana) -->
+            <div class="row g-2">
+              <div class="col-3 border-end pe-2" style="min-height: 200px;">
+                <div class="bg-primary rounded mb-3" style="height: 16px; width: 80%;"></div>
+                <div class="bg-light rounded mb-2" style="height: 12px; width: 100%;"></div>
+                <div class="bg-light rounded mb-2" style="height: 12px; width: 90%;"></div>
+                <div class="bg-light rounded mb-2" style="height: 12px; width: 95%;"></div>
+                <div class="bg-light rounded" style="height: 12px; width: 60%;"></div>
+              </div>
+              <div class="col-9 ps-2">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="bg-light rounded" style="height: 18px; width: 40%;"></div>
+                  <div class="d-flex gap-1">
+                    <span class="d-inline-block rounded bg-light" style="width: 20px; height: 20px;"></span>
+                    <span class="d-inline-block rounded-circle bg-light" style="width: 20px; height: 20px;"></span>
+                  </div>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-4">
+                    <div class="card p-2 bg-light border-0 shadow-none text-center">
+                      <div class="text-primary font-bold" style="font-size: 14px;">12.450</div>
+                      <div class="text-muted" style="font-size: 8px;">Pengunjung</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card p-2 bg-light border-0 shadow-none text-center">
+                      <div class="text-success font-bold" style="font-size: 14px;">Rp 45M</div>
+                      <div class="text-muted" style="font-size: 8px;">Pendapatan</div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card p-2 bg-light border-0 shadow-none text-center">
+                      <div class="text-warning font-bold" style="font-size: 14px;">98%</div>
+                      <div class="text-muted" style="font-size: 8px;">Kepuasan</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mockup Chart -->
+                <div class="card p-2 bg-light border-0 shadow-none" style="height: 100px;">
+                  <div class="d-flex align-items-end justify-content-between h-100 px-3">
+                    <div class="bg-primary rounded-top" style="height: 40%; width: 12%;"></div>
+                    <div class="bg-primary rounded-top" style="height: 65%; width: 12%;"></div>
+                    <div class="bg-primary rounded-top" style="height: 50%; width: 12%;"></div>
+                    <div class="bg-primary rounded-top" style="height: 85%; width: 12%;"></div>
+                    <div class="bg-primary rounded-top" style="height: 70%; width: 12%;"></div>
+                    <div class="bg-primary rounded-top" style="height: 95%; width: 12%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="bg-primary text-white py-4 shadow-sm border-0">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-md-4">
+          <div class="font-bold display-6">50+</div>
+          <p class="m-0 text-white-50">Komponen UI Responsif</p>
+        </div>
+        <div class="col-md-4 border-start border-white-10">
+          <div class="font-bold display-6">10+</div>
+          <p class="m-0 text-white-50">Halaman Contoh & Template</p>
+        </div>
+        <div class="col-md-4 border-start border-white-10">
+          <div class="font-bold display-6">0</div>
+          <p class="m-0 text-white-50">Dependency Eksternal (CDN) & Zero jQuery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="fitur" class="py-6">
+    <div class="container">
+      <div class="text-center mb-5 max-width-md mx-auto">
+        <h2 class="font-bold text-body mb-3">Keunggulan Utama Template Kami</h2>
+        <p class="text-muted">Dibangun secara modular dan terstruktur untuk menghasilkan kecepatan performa terbaik serta kemudahan integrasi kode.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Fitur 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 p-3 at-landing-feature-card">
+            <div class="at-feature-icon">{% icon "brand-bootstrap" %}</div>
+            <h5 class="font-bold text-body mb-2">Bootstrap 5.3.3</h5>
+            <p class="text-muted small">Menggunakan kerangka kerja Bootstrap terbaru dengan dukungan CSS Utility classes bawaan secara penuh.</p>
+          </div>
+        </div>
+        <!-- Fitur 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 p-3 at-landing-feature-card">
+            <div class="at-feature-icon">{% icon "moon" %}</div>
+            <h5 class="font-bold text-body mb-2">Dark Mode Bawaan</h5>
+            <p class="text-muted small">Mendukung transisi tema gelap dan terang secara otomatis menggunakan variabel CSS modern dari Bootstrap.</p>
+          </div>
+        </div>
+        <!-- Fitur 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 p-3 at-landing-feature-card">
+            <div class="at-feature-icon">{% icon "bolt" %}</div>
+            <h5 class="font-bold text-body mb-2">Sangat Cepat & Ringan</h5>
+            <p class="text-muted small">Bundling JS minimalis via esbuild dan kompilasi SCSS langsung, bebas dari pemuatan pustaka jQuery yang lambat.</p>
+          </div>
+        </div>
+        <!-- Fitur 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 p-3 at-landing-feature-card">
+            <div class="at-feature-icon">{% icon "forms" %}</div>
+            <h5 class="font-bold text-body mb-2">Input Form Lanjutan</h5>
+            <p class="text-muted small">Date/Time Picker (Flatpickr) dan dropdown pencarian autocomplete (Tom Select) modern yang ter-host sendiri.</p>
+          </div>
+        </div>
+        <!-- Fitur 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 p-3 at-landing-feature-card">
+            <div class="at-feature-icon">{% icon "table" %}</div>
+            <h5 class="font-bold text-body mb-2">Datatables Lanjutan</h5>
+            <p class="text-muted small">Urutkan, filter, cari, sorot teks (highlight), dan unduh data ke berkas CSV langsung di sisi klien.</p>
+          </div>
+        </div>
+        <!-- Fitur 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 p-3 at-landing-feature-card">
+            <div class="at-feature-icon">{% icon "shield" %}</div>
+            <h5 class="font-bold text-body mb-2">Tanpa CDN Eksternal</h5>
+            <p class="text-muted small">Semua font, berkas CSS, ikon, dan Javascript disimpan langsung secara lokal demi privasi dan keamanan tinggi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Gallery -->
+  <section id="showcase" class="py-6 bg-light-subtle">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="font-bold text-body mb-3">Jelajahi Demo Komponen Utama</h2>
+        <p class="text-muted">Klik salah satu tautan di bawah untuk melihat showcase interaktif pada menu dashboard.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 p-3 text-center">
+            <div class="p-3 bg-primary-subtle text-primary rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 30px;">
+              {% icon "table" %}
+            </div>
+            <h5 class="font-bold">Datatables Lanjutan</h5>
+            <p class="text-muted small">Showcase tabel interaktif klien dengan fungsi pencarian sorot dan ekspor CSV.</p>
+            <a href="/components/datatables/" class="btn btn-outline-primary btn-sm mt-auto">Lihat Halaman</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-3 text-center">
+            <div class="p-3 bg-success-subtle text-success rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 30px;">
+              {% icon "forms" %}
+            </div>
+            <h5 class="font-bold">Form Input Lanjutan</h5>
+            <p class="text-muted small">Showcase input penyeleksi tanggal kalender dan autocomplete dropdown pilihan ganda.</p>
+            <a href="/forms/advanced/" class="btn btn-outline-primary btn-sm mt-auto">Lihat Halaman</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-3 text-center">
+            <div class="p-3 bg-warning-subtle text-warning rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; line-height: 30px;">
+              {% icon "chart-bar" %}
+            </div>
+            <h5 class="font-bold">ApexCharts Integrasi</h5>
+            <p class="text-muted small">Grafik analitik interaktif yang responsif dan mendukung skema warna gelap secara instan.</p>
+            <a href="/charts/" class="btn btn-outline-primary btn-sm mt-auto">Lihat Halaman</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="harga" class="py-6">
+    <div class="container">
+      <div class="text-center mb-5 max-width-md mx-auto">
+        <h2 class="font-bold text-body mb-3">Rencana Harga Lisensi</h2>
+        <p class="text-muted">Pilih paket lisensi yang paling cocok untuk proyek pengembangan web personal maupun komersial Anda.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center align-items-center">
+        <!-- Paket Free -->
+        <div class="col-md-5">
+          <div class="card p-4 at-pricing-card border shadow-sm">
+            <h4 class="font-bold text-body">Free License</h4>
+            <p class="text-muted small">Sempurna untuk belajar dan proyek sampingan non-komersial.</p>
+            <div class="my-4">
+              <span class="display-5 font-bold">Rp 0</span>
+              <span class="text-muted">/ selamanya</span>
+            </div>
+            <ul class="list-unstyled mb-4 gap-2 d-flex flex-column text-muted small">
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} 30+ Komponen UI Dasar</li>
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} 5 Halaman Template</li>
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} Lisensi Proyek Pribadi</li>
+              <li class="text-decoration-line-through">{% icon "x", { class: "icon-xs text-danger me-2" } %} Komponen Form Lanjutan</li>
+              <li class="text-decoration-line-through">{% icon "x", { class: "icon-xs text-danger me-2" } %} Dukungan Teknis Prioritas</li>
+            </ul>
+            <a href="/" class="btn btn-outline-secondary w-100 py-2 font-semibold">Coba Sekarang</a>
+          </div>
+        </div>
+
+        <!-- Paket Pro (Featured) -->
+        <div class="col-md-5">
+          <div class="card p-4 at-pricing-card at-pricing-featured shadow border-primary">
+            <div class="at-pricing-badge">Populer</div>
+            <h4 class="font-bold text-body">Commercial Pro</h4>
+            <p class="text-muted small">Lisensi penuh untuk pengembang profesional dan instansi perusahaan.</p>
+            <div class="my-4">
+              <span class="display-5 font-bold text-primary">Rp 299.000</span>
+              <span class="text-muted">/ sekali bayar</span>
+            </div>
+            <ul class="list-unstyled mb-4 gap-2 d-flex flex-column text-body small">
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} <strong>Semua Komponen</strong> (50+ UI)</li>
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} <strong>Akses Landing Page & Dashboard</strong></li>
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} Lisensi Komersial (Klien Tidak Terbatas)</li>
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} Form & Datatables Lanjutan Terintegrasi</li>
+              <li>{% icon "check", { class: "icon-xs text-success me-2" } %} Pembaruan Kode Gratis Selamanya</li>
+            </ul>
+            <a href="/" class="btn btn-primary w-100 py-2 font-semibold shadow">Beli Lisensi Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimoni" class="py-6 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="font-bold text-body mb-2">Dipercaya oleh Pengembang</h2>
+        <p class="text-muted">Apa kata para praktisi dan pengembang web yang telah mencoba menggunakan template ini.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 at-testimonial-card border-0 shadow-sm">
+            <p class="fst-italic text-body mb-3">"Sangat terbantu dengan template ini untuk membangun aplikasi pelaporan aset internal. Proses pembuatan form dan input tanggalnya sangat mulus karena menggunakan Flatpickr secara lokal tanpa CDN eksternal."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar avatar-md rounded-circle bg-primary-subtle text-primary fw-bold text-center" style="width: 40px; height: 40px; line-height: 40px;">HN</div>
+              <div>
+                <h6 class="font-bold m-0 text-body">Hendra Nugroho</h6>
+                <span class="text-muted small">Lead Developer di Instansi BMN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 at-testimonial-card border-0 shadow-sm">
+            <p class="fst-italic text-body mb-3">"Template paling ringan yang pernah saya pakai. Tanpa dependensi jQuery, performa dashboard menjadi sangat responsif dan transisi dark modenya bekerja sangat baik."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="avatar avatar-md rounded-circle bg-success-subtle text-success fw-bold text-center" style="width: 40px; height: 40px; line-height: 40px;">SL</div>
+              <div>
+                <h6 class="font-bold m-0 text-body">Santi Larasati</h6>
+                <span class="text-muted small">Freelance Frontend Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Sleek Accordion) -->
+  <section id="faq" class="py-6">
+    <div class="container" style="max-width: 800px;">
+      <div class="text-center mb-5">
+        <h2 class="font-bold text-body mb-2">Pertanyaan yang Sering Diajukan</h2>
+        <p class="text-muted">Semua jawaban atas kebingungan Anda terkait penggunaan template ini.</p>
+      </div>
+
+      <div class="accordion" id="accordionFAQ">
+        <div class="accordion-item border shadow-none mb-2 rounded overflow-hidden">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button font-bold text-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Apakah template ini mendukung dark mode otomatis?
+            </button>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted small">
+              Ya, template ini mendukung fitur dark mode bawaan Bootstrap 5.3 menggunakan atribut <code>data-bs-theme</code> yang terintegrasi dengan <code>localStorage</code> untuk menyimpan preferensi pengguna.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border shadow-none mb-2 rounded overflow-hidden">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed font-bold text-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Apakah saya boleh menggunakannya untuk proyek komersial klien?
+            </button>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted small">
+              Untuk lisensi gratis hanya diperkenankan untuk proyek pembelajaran atau personal. Jika Anda berniat menggunakannya untuk klien komersial, silakan membeli paket <strong>Commercial Pro</strong> dengan tarif sekali bayar.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border shadow-none mb-2 rounded overflow-hidden">
+          <h3 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed font-bold text-body" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Mengapa template ini diklaim sangat ringan?
+            </button>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted small">
+              Karena kami tidak menggunakan library berat seperti jQuery. Semua interaktivitas (sidebar, charts, datatable, dan validasi form) menggunakan Javascript ES Module Vanilla murni yang sangat optimal saat dipaketkan oleh esbuild.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-body border-top py-5">
+    <div class="container text-center">
+      <p class="text-muted small m-0">&copy; 2026 AdminTemplate. Hak Cipta Dilindungi Undang-Undang.</p>
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <a href="#" class="text-muted">{% icon "brand-github", { class: "icon-sm" } %}</a>
+        <a href="#" class="text-muted">{% icon "brand-twitter", { class: "icon-sm" } %}</a>
+        <a href="#" class="text-muted">{% icon "world", { class: "icon-sm" } %}</a>
+      </div>
+    </div>
+  </footer>
+</div>

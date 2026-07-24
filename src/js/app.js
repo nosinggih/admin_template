@@ -4,6 +4,7 @@ import { initThemeToggle } from './modules/theme.js';
 import { initSidebar } from './modules/sidebar.js';
 import { initCharts } from './modules/charts.js';
 import { initDatatables } from './modules/datatable.js';
+import { initAdvancedForms } from './modules/advanced-form.js';
 
 // Expose bootstrap ke window
 window.bootstrap = bootstrap;
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSidebar();
   initCharts();
   initDatatables();
+  initAdvancedForms();
 
   // Inisialisasi Tooltip & Popover bawaan Bootstrap
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');

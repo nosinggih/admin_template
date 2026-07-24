@@ -28,7 +28,8 @@ module.exports = [
     icon: "table",
     children: [
       { label: "Tabel Dasar", url: "/tables/basic/" },
-      { label: "Tabel Interaktif", url: "/tables/interactive/" }
+      { label: "Tabel Interaktif", url: "/tables/interactive/" },
+      { label: "Datatables Lanjutan", url: "/components/datatables/" }
     ]
   },
   {
@@ -39,7 +40,8 @@ module.exports = [
       { label: "Controls & Switches", url: "/forms/controls/" },
       { label: "Validasi Form", url: "/forms/validation/" },
       { label: "File Upload", url: "/forms/upload/" },
-      { label: "Form Layout", url: "/forms/layout/" }
+      { label: "Form Layout", url: "/forms/layout/" },
+      { label: "Form Lanjutan", url: "/forms/advanced/" }
     ]
   },
   {
@@ -68,5 +70,10 @@ module.exports = [
     label: "Pengaturan",
     icon: "settings",
     url: "/settings/"
+  },
+  {
+    label: "Landing Page",
+    icon: "world",
+    url: "/landing/"
   }
 ];

@@ -199,6 +199,7 @@ Buat halaman demo untuk tiap kelompok berikut (pakai layout dashboard):
 - **[3.2]** Tabel interaktif (sort + search + pagination) — pakai JS vanilla di modul `datatable.js` (tanpa library berat).
 - **[3.3]** Halaman Charts: line, area, bar, donut, sparkline — via ApexCharts (modul `charts.js`).
 - **[3.4]** Stat/metric cards untuk dashboard (angka + tren + mini chart).
+- **[3.5]** Halaman Datatables Lanjutan: showcase tabel interaktif dengan paging dinamis, search highlighting, dan export CSV.
 
 ### FASE 4 — Form & Input
 - **[4.1]** Input dasar, textarea, select, input group, label & help text.
@@ -206,6 +207,7 @@ Buat halaman demo untuk tiap kelompok berikut (pakai layout dashboard):
 - **[4.3]** State validasi (valid/invalid), pesan error.
 - **[4.4]** File upload / dropzone (styling; JS opsional).
 - **[4.5]** Halaman contoh "Form Layout" (form horizontal, wizard/stepper sederhana).
+- **[4.6]** Input Form Lanjutan: Date/Time Picker dan Autocomplete Dropdown (Tom Select).
 
 ### FASE 5 — Halaman (Pages)
 - **[5.1]** Dashboard utama (`index.njk`): gabungan stat card + chart + tabel aktivitas terbaru.
@@ -215,12 +217,14 @@ Buat halaman demo untuk tiap kelompok berikut (pakai layout dashboard):
 - **[5.5]** Profil pengguna + Pengaturan akun (tab: profil, keamanan, notifikasi).
 - **[5.6]** Contoh CRUD lengkap: `user-list` (datatable), `user-detail`, `user-form` (tambah/edit).
 - **[5.7]** Halaman `Icons` (galeri Tabler Icons) & halaman `blank` (starter kosong).
+- **[5.8]** Landing Page Pemasaran: Halaman pemasaran interaktif, responsif dengan menu, hero, features grid, pricing, dan testimonials.
 
 ### FASE 6 — Interaktivitas (modul JS di `src/js/modules/`)
 - **[6.1]** `theme.js`: toggle dark/light + simpan ke `localStorage` + baca saat load.
 - **[6.2]** `sidebar.js`: collapse/expand, state di localStorage, auto-collapse di mobile.
 - **[6.3]** `datatable.js`, `charts.js` (dipakai Fase 3).
 - **[6.4]** `app.js`: inisialisasi tooltip/popover Bootstrap + import semua modul.
+- **[6.5]** `advanced-form.js`: inisialisasi input lanjutan (Flatpickr dan Tom Select).
 
 ### FASE 7 — Polish & Dokumentasi
 - **[7.1]** Uji dark mode di SEMUA halaman, perbaiki kontras.
