@@ -1,0 +1,80 @@
+@extends('layouts.dashboard')
+
+@section('dashboard_content')
+<div class="row row-cards g-3">
+  <!-- Alerts Section -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Alerts</h5>
+      </div>
+      <div class="card-body">
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+          <span class="me-2"><x-icon name="check" /></span>
+          <div>Data berhasil disimpan dengan sukses.</div>
+        </div>
+        <div class="alert alert-info d-flex align-items-center" role="alert">
+          <span class="me-2"><x-icon name="info-circle" /></span>
+          <div>Pembaruan sistem dijadwalkan malam ini pukul 22:00.</div>
+        </div>
+        <div class="alert alert-warning d-flex align-items-center" role="alert">
+          <span class="me-2"><x-icon name="alert-triangle" /></span>
+          <div>Kapasitas penyimpanan Anda mencapai 85%.</div>
+        </div>
+        <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+          <span class="me-2"><x-icon name="circle-x" /></span>
+          <div>Koneksi ke database terputus. Silakan coba lagi.</div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Badges & Status Indicators -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Badges & Status Indicators</h5>
+      </div>
+      <div class="card-body">
+        <div class="mb-4">
+          <div class="small text-muted mb-2">Varian Badges:</div>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary">Primary</span>
+            <span class="badge bg-secondary">Secondary</span>
+            <span class="badge bg-success">Active</span>
+            <span class="badge bg-danger">Failed</span>
+            <span class="badge bg-warning text-dark">Pending</span>
+            <span class="badge bg-info text-dark">Processing</span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="small text-muted mb-2">Pill Badges:</div>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge rounded-pill bg-primary">99+ Messages</span>
+            <span class="badge rounded-pill bg-success">Verified</span>
+            <span class="badge rounded-pill bg-danger">Rejected</span>
+          </div>
+        </div>
+        <div>
+          <div class="small text-muted mb-2">Status Indicators:</div>
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
+                <span class="spinner-grow spinner-grow-sm me-1" style="width: 0.5rem; height: 0.5rem;" role="status"></span>
+                Online
+              </span>
+              <span class="badge bg-warning-subtle text-warning border border-warning-subtle px-2 py-1">
+                Away
+              </span>
+              <span class="badge bg-danger-subtle text-danger border border-danger-subtle px-2 py-1">
+                Offline
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection

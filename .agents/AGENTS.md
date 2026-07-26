@@ -1,4 +1,4 @@
-﻿# Rules: Admin Template Project
+# Rules: Admin Template Project
 
 > Aturan-aturan berikut wajib diikuti oleh AI agent saat bekerja pada project ini.
 > Semua keputusan sudah terkunci di RENCANA_ADMIN_TEMPLATE.md.
@@ -51,6 +51,7 @@ Sebuah task dianggap SELESAI hanya jika SEMUA terpenuhi:
 - Jangan install dependency baru tanpa konfirmasi user
 - Jangan hardcode menu di sidebar.njk
 - Jangan edit folder dist/ secara manual
+- Jangan menggunakan CDN untuk font eksternal; semua font eksternal wajib diinstal via npm dan di-host sendiri (self-hosted)
 
 ---
 

@@ -1,0 +1,49 @@
+// Override Variabel Bootstrap 5.3
+
+// Palette Warna Primary & Status (Clean Warm Concept)
+$primary:   #91C8E4; // Pastel Blue Primary
+$secondary: #A0AEC0; // Soft Slate Gray
+$success:   #B4E3B5; // Pastel Green
+$info:      #A0E7E5; // Pastel Cyan
+$warning:   #FDE49E; // Pastel Yellow
+$danger:    #FEA3B3; // Pastel Pink
+$light:     #FFFFFF;
+$dark:      #1A1412; // Deep Espresso
+
+// Layout & Surfaces
+$body-bg:        #FBFBFB; // Clean Light Gray Background
+$body-color:     #2D3748; // Slate Dark Charcoal Text
+$border-color:   #E2E8F0; // Clean Light Border
+
+// Form Control (Full White Input)
+$input-bg:                  #FFFFFF; // Full White Input Background
+$input-color:               #2D3748;
+$input-border-color:        #E2E8F0;
+$input-focus-bg:            #FFFFFF;
+$input-focus-border-color:  #CBD5E1;
+$input-focus-box-shadow:    0 0 0 0.2rem rgba(45, 55, 72, 0.08);
+
+// Tipografi
+$font-family-sans-serif: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+$font-size-base:        0.875rem; // 14px
+$headings-font-weight:  700;
+$line-height-base:      1.5;
+
+// Radius & Shadow (Corner Radius Lebih Besar)
+$border-radius-sm:    8px;
+$border-radius:       12px;
+$border-radius-lg:    18px;
+$card-border-radius:  16px;
+$btn-border-radius:   12px;
+$input-border-radius: 10px;
+$box-shadow-sm:       0 2px 4px rgba(45, 55, 72, 0.04);
+$box-shadow:          0 10px 25px -5px rgba(45, 55, 72, 0.06), 0 4px 6px -2px rgba(45, 55, 72, 0.02);
+$box-shadow-lg:       0 20px 35px -10px rgba(45, 55, 72, 0.1);
+
+// Bootstrap Options
+$enable-negative-margins: true;
+
+
+
+
+

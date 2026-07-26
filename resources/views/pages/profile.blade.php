@@ -1,0 +1,64 @@
+@extends('layouts.dashboard')
+
+@section('dashboard_content')
+<div class="row row-cards g-3">
+  <!-- Sidebar Profile Card -->
+  <div class="col-lg-4">
+    <div class="card text-center p-4">
+      <div class="mb-3">
+        <span class="at-avatar bg-primary text-white mx-auto" style="width: 5rem; height: 5rem; font-size: 2rem;">JD</span>
+      </div>
+      <h5 class="fw-bold m-0">John Doe</h5>
+      <p class="text-muted small">Senior Software Engineer</p>
+      <div class="d-flex justify-content-center gap-2 mb-3">
+        <span class="badge bg-success">Aktif</span>
+        <span class="badge bg-primary-subtle text-primary">Administrator</span>
+      </div>
+      <hr>
+      <div class="text-start small text-muted">
+        <div class="mb-2"><x-icon name="mail" /> john.doe@example.com</div>
+        <div class="mb-2"><x-icon name="phone" /> +62 812-3456-7890</div>
+        <div><x-icon name="map-pin" /> Jakarta, Indonesia</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile Edit Form -->
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title m-0">Edit Informasi Profil</h5>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nama Depan</label>
+              <input type="text" class="form-control" value="John">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Nama Belakang</label>
+              <input type="text" class="form-control" value="Doe">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" value="john.doe@example.com">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Nomor Telepon</label>
+              <input type="text" class="form-control" value="+62 812-3456-7890">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Bio / Biografi Singkat</label>
+              <textarea class="form-control" rows="3">Pengembang web penuh semangat dengan pengalaman 5+ tahun dalam membangun sistem dashboard admin yang skalabel.</textarea>
+            </div>
+          </div>
+          <div class="mt-4 text-end">
+            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection

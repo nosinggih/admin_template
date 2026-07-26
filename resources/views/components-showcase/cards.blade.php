@@ -1,0 +1,82 @@
+@extends('layouts.dashboard')
+
+@section('dashboard_content')
+<div class="row row-cards g-3">
+  <!-- Basic Card -->
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Card Standard</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text text-muted">Ini adalah contoh card standar dengan header dan body. Komponen card Bootstrap sangat fleksibel untuk menampung berbagai elemen.</p>
+      </div>
+      <div class="card-footer text-muted small">
+        Diperbarui 5 menit yang lalu
+      </div>
+    </div>
+  </div>
+
+  <!-- Card with Action -->
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-header d-flex align-items-center justify-content-between">
+        <h5 class="card-title m-0">Card dengan Aksi</h5>
+        <div class="dropdown">
+          <button class="btn btn-icon btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown">
+            <x-icon name="dots-vertical" />
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Refresh</a></li>
+            <li><a class="dropdown-item" href="#">Unduh Data</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="fw-bold">Manajemen Proyek</h6>
+        <p class="small text-muted">Pantau progres pekerjaan tim dalam satu tampilan terpadu.</p>
+        <button class="btn btn-sm btn-primary">Lihat Detail</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stat Card Simple -->
+  <div class="col-md-4">
+    <div class="card h-100 p-3 d-flex justify-content-center">
+      <div class="d-flex align-items-center">
+        <span class="at-avatar bg-primary-subtle text-primary me-3">
+          <x-icon name="users" />
+        </span>
+        <div>
+          <div class="text-muted small">Pengguna Aktif</div>
+          <div class="h3 mb-0 fw-bold">8,540</div>
+          <div class="small text-success"><x-icon name="arrow-up-right" /> +12% minggu ini</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Colored Header Cards -->
+  <div class="col-md-6">
+    <div class="card border-primary mb-3">
+      <div class="card-header bg-primary text-white">
+        <h5 class="card-title m-0">Header Berwarna Primary</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Card ini menggunakan header berwarna primary bawaan Bootstrap 5.3.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card border-success mb-3">
+      <div class="card-header bg-success text-white">
+        <h5 class="card-title m-0">Header Berwarna Success</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Card ini menggunakan header berwarna success untuk status positif.</p>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection

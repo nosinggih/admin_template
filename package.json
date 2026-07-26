@@ -1,38 +1,31 @@
 {
-  "name": "admin-template",
-  "version": "0.1.0",
-  "description": "Admin dashboard template berbasis Bootstrap 5",
-  "private": true,
-  "main": "src/js/app.js",
-  "scripts": {
-    "build:html": "eleventy",
-    "build:css": "sass --load-path=node_modules src/scss/app.scss dist/css/app.css",
-    "build:css-min": "sass --load-path=node_modules src/scss/app.scss dist/css/app.css --style=compressed",
-    "build:js": "esbuild src/js/app.js --bundle --outfile=dist/js/app.js",
-    "build:js-min": "esbuild src/js/app.js --bundle --minify --outfile=dist/js/app.js",
-    "build": "run-s build:html build:css-min build:js-min",
-    "watch:css": "sass --load-path=node_modules src/scss/app.scss dist/css/app.css --watch",
-    "watch:js": "esbuild src/js/app.js --bundle --outfile=dist/js/app.js --watch",
-    "serve": "eleventy --serve",
-    "dev": "run-s build:css build:js --parallel watch:css watch:js serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nosinggih/admin_template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@fontsource/inter": "^5.3.0",
-    "@tabler/icons": "^3.45.0",
-    "apexcharts": "^3.54.1",
-    "bootstrap": "^5.3.3"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.6",
-    "esbuild": "^0.21.5",
-    "npm-run-all": "^4.1.5",
-    "sass": "1.77"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "publish-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets/vendor', {recursive:true}); fs.mkdirSync('public/assets/fonts', {recursive:true}); fs.copyFileSync('node_modules/flatpickr/dist/flatpickr.min.js', 'public/assets/vendor/flatpickr.min.js'); fs.copyFileSync('node_modules/flatpickr/dist/flatpickr.min.css', 'public/assets/vendor/flatpickr.min.css'); fs.copyFileSync('node_modules/tom-select/dist/js/tom-select.complete.min.js', 'public/assets/vendor/tom-select.complete.min.js'); fs.copyFileSync('node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css', 'public/assets/vendor/tom-select.bootstrap5.min.css'); fs.cpSync('node_modules/@fontsource/inter/files', 'public/assets/fonts', {recursive: true});\""
+    },
+    "devDependencies": {
+        "@fontsource/inter": "^5.3.0",
+        "@tabler/icons": "^3.45.0",
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/vite": "^4.0.0",
+        "alpinejs": "^3.4.2",
+        "apexcharts": "^3.54.1",
+        "autoprefixer": "^10.4.2",
+        "axios": "^1.7.4",
+        "bootstrap": "^5.3.3",
+        "concurrently": "^9.0.1",
+        "flatpickr": "^4.6.13",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.4.31",
+        "sass": "1.77",
+        "tailwindcss": "^3.1.0",
+        "tom-select": "^2.6.2",
+        "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "@fontsource/plus-jakarta-sans": "^5.3.0"
+    }
 }

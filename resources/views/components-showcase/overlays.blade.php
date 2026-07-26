@@ -1,0 +1,51 @@
+@extends('layouts.dashboard')
+
+@section('dashboard_content')
+<div class="row row-cards g-3">
+  <!-- Tooltips -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Tooltips</h5>
+      </div>
+      <div class="card-body">
+        <p class="text-muted small">Arahkan kursor (*hover*) pada tombol di bawah untuk melihat tooltip arahan.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip di Atas">
+            Tooltip Top
+          </button>
+          <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip di Bawah">
+            Tooltip Bottom
+          </button>
+          <button type="button" class="btn btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip di Kiri">
+            Tooltip Left
+          </button>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip di Kanan">
+            Tooltip Right
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popovers -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Popovers</h5>
+      </div>
+      <div class="card-body">
+        <p class="text-muted small">Klik pada tombol untuk menampilkan popover informasi tambahan.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-title="Judul Popover" data-bs-content="Ini adalah contoh isi pesan popover interaktif dari Bootstrap.">
+            Popover Buka
+          </button>
+          <button type="button" class="btn btn-danger" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible Popover" data-bs-content="Klik di luar tombol untuk menutup popover ini.">
+            Dismissible Popover
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection

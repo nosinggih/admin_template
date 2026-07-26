@@ -1,0 +1,83 @@
+@extends('layouts.dashboard')
+
+@section('dashboard_content')
+<div class="row row-cards g-3">
+  <!-- Checkbox & Radio -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Checkbox & Radio Buttons</h5>
+      </div>
+      <div class="card-body">
+        <div class="mb-4">
+          <label class="form-label font-semibold">Pilih Minat / Hobi (Checkbox):</label>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="check1" checked>
+            <label class="form-check-label" for="check1">Pengembangan Web & Coding</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="check2">
+            <label class="form-check-label" for="check2">Desain Grafis & UI/UX</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check3" disabled>
+            <label class="form-check-label" for="check3">Manajemen Proyek (Disabled)</label>
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label font-semibold">Metode Pembayaran (Radio):</label>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="payRadio" id="radio1" checked>
+            <label class="form-check-label" for="radio1">Transfer Bank / Virtual Account</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="payRadio" id="radio2">
+            <label class="form-check-label" for="radio2">E-Wallet (QRIS / GoPay / OVO)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="payRadio" id="radio3">
+            <label class="form-check-label" for="radio3">Kartu Kredit / Debit</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Switches, Range & Color Picker -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-header">
+        <h5 class="card-title m-0">Switches, Range & Color Picker</h5>
+      </div>
+      <div class="card-body">
+        <div class="mb-4">
+          <label class="form-label font-semibold">Pengaturan Notifikasi (Switches):</label>
+          <div class="form-check form-switch mb-2">
+            <input class="form-check-input" type="checkbox" id="switchEmail" checked>
+            <label class="form-check-label" for="switchEmail">Notifikasi Email</label>
+          </div>
+          <div class="form-check form-switch mb-2">
+            <input class="form-check-input" type="checkbox" id="switchSms">
+            <label class="form-check-label" for="switchSms">Notifikasi SMS / WhatsApp</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="switchPush" checked>
+            <label class="form-check-label" for="switchPush">Notifikasi Browser Push</label>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="customRange" class="form-label font-semibold">Rentang Volume / Nilai (Range Slider):</label>
+          <input type="range" class="form-range" min="0" max="100" id="customRange" value="65">
+        </div>
+
+        <div>
+          <label for="exampleColorInput" class="form-label font-semibold">Pilih Warna Akses Aksen (Color Picker):</label>
+          <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#206bc4" title="Pilih warna">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection
