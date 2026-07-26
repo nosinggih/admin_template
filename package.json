@@ -6,7 +6,6 @@
         "dev": "vite",
         "publish-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets/vendor', {recursive:true}); fs.mkdirSync('public/assets/fonts', {recursive:true}); fs.copyFileSync('node_modules/flatpickr/dist/flatpickr.min.js', 'public/assets/vendor/flatpickr.min.js'); fs.copyFileSync('node_modules/flatpickr/dist/flatpickr.min.css', 'public/assets/vendor/flatpickr.min.css'); fs.copyFileSync('node_modules/tom-select/dist/js/tom-select.complete.min.js', 'public/assets/vendor/tom-select.complete.min.js'); fs.copyFileSync('node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css', 'public/assets/vendor/tom-select.bootstrap5.min.css'); fs.cpSync('node_modules/@fontsource/inter/files', 'public/assets/fonts', {recursive: true});\""
     },
-
     "devDependencies": {
         "@fontsource/inter": "^5.3.0",
         "@tabler/icons": "^3.45.0",
@@ -25,5 +24,8 @@
         "tailwindcss": "^3.1.0",
         "tom-select": "^2.6.2",
         "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "@fontsource/plus-jakarta-sans": "^5.3.0"
     }
 }

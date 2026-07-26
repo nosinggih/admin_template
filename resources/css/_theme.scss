@@ -1,63 +1,189 @@
 // Token Kustom & Custom Dark Mode adjustments
 
-// Font-face Inter (self-hosted via @fontsource/inter)
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('../fonts/inter/inter-latin-300-normal.woff2') format('woff2');
+// Plus Jakarta Sans Font (self-hosted via @fontsource/plus-jakarta-sans)
+@import "@fontsource/plus-jakarta-sans/300.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+
+// Utility Kelas Pastel & Sepia Gradient
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #91C8E4 0%, #76b1cf 100%) !important;
+  color: #1E293B !important;
 }
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('../fonts/inter/inter-latin-400-normal.woff2') format('woff2');
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #B4E3B5 0%, #9bcba1 100%) !important;
+  color: #1E293B !important;
 }
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/inter/inter-latin-500-normal.woff2') format('woff2');
+
+.bg-gradient-info {
+  background: linear-gradient(135deg, #A0E7E5 0%, #86d4d1 100%) !important;
+  color: #1E293B !important;
 }
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
+
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #FDE49E 0%, #ecd38c 100%) !important;
+  color: #1E293B !important;
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(135deg, #FEA3B3 0%, #ee92a2 100%) !important;
+  color: #1E293B !important;
+}
+
+.bg-gradient-pastel {
+  background: linear-gradient(135deg, #FDFBF7 0%, #F4F0E8 100%) !important;
+}
+
+.btn-gradient-primary {
+  background: linear-gradient(135deg, #91C8E4 0%, #76b1cf 100%);
+  border: 1px solid #76b1cf;
+  color: #1E293B;
+  box-shadow: 0 4px 14px rgba(145, 200, 228, 0.3);
   font-weight: 600;
-  font-display: swap;
-  src: url('../fonts/inter/inter-latin-600-normal.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/inter/inter-latin-700-normal.woff2') format('woff2');
+  transition: all 0.25s ease;
+
+  &:hover, &:focus, &:active {
+    background: linear-gradient(135deg, #76b1cf 0%, #5d9ab7 100%);
+    color: #1E293B;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(145, 200, 228, 0.4);
+  }
 }
 
+// Style Kustom Form Input (Full White di Light Mode)
+.form-control,
+.form-select,
+.form-check-input,
+.input-group-text {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0;
+  color: #2D3748;
+  border-radius: 10px;
 
-// Global Dark Mode Theme adjustments via data-bs-theme
+  &:focus {
+    background-color: #FFFFFF !important;
+    border-color: #CBD5E1;
+    box-shadow: 0 0 0 0.2rem rgba(45, 55, 72, 0.08);
+    color: #2D3748;
+  }
+
+  &::placeholder {
+    color: #A0AEC0;
+  }
+}
+
+// Varian Komponen Card (Latar Belakang Full White #FFFFFF beda dengan Body BG #FBFBFB)
+.card {
+  background-color: #FFFFFF; 
+  border: 1px solid #E2E8F0;
+  color: #2D3748;
+}
+
+.card-normal {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 6px rgba(45, 55, 72, 0.03);
+}
+
+.card-shadow {
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: 0 12px 30px -5px rgba(45, 55, 72, 0.08), 0 4px 10px -2px rgba(45, 55, 72, 0.03);
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8F6F0 100%);
+  border: 1px solid #E6DFD5;
+  color: #2D3748;
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+
+  .card-img-overlay-warm {
+    background: linear-gradient(180deg, rgba(45, 55, 72, 0.2) 0%, rgba(26, 20, 18, 0.85) 100%);
+    padding: 1.5rem;
+    border-radius: inherit;
+  }
+}
+
+// Global Dark Mode Theme: Deep Espresso & Cream (Nuansa Sepia Malam)
 [data-bs-theme="dark"] {
-  --at-body-bg: #0f172a;
-  --at-card-bg: #1e293b;
-  --at-border-color: #334155;
+  --at-body-bg: #181311; // Deep Rich Espresso
+  --at-card-bg: #241C18; // Warm Espresso Surface
+  --at-border-color: #3D2E27; // Warm Espresso Border
   
   // Override standard Bootstrap dark mode CSS variables
-  --bs-body-bg: #0f172a;
-  --bs-body-bg-rgb: 15, 23, 42;
-  --bs-body-color: #f8fafc;
-  --bs-body-color-rgb: 248, 250, 252;
-  --bs-card-bg: #1e293b;
-  --bs-border-color: #334155;
-  --bs-card-border-color: #334155;
-  --bs-secondary-bg: #1e293b;
-  --bs-tertiary-bg: #0f172a;
+  --bs-body-bg: #181311;
+  --bs-body-bg-rgb: 24, 19, 17;
+  --bs-body-color: #F5EBE6; // Cream Sepia Text
+  --bs-body-color-rgb: 245, 235, 230;
+  --bs-card-bg: #241C18;
+  --bs-border-color: #3D2E27;
+  --bs-card-border-color: #3D2E27;
+  --bs-secondary-bg: #241C18;
+  --bs-tertiary-bg: #181311;
+
+  .form-control,
+  .form-select,
+  .form-check-input,
+  .input-group-text {
+    background-color: #2A221E !important;
+    border-color: #3D2E27;
+    color: #F5EBE6;
+
+    &:focus {
+      background-color: #2A221E !important;
+      border-color: #59443B;
+      box-shadow: 0 0 0 0.2rem rgba(245, 235, 230, 0.1);
+      color: #F5EBE6;
+    }
+
+    &::placeholder {
+      color: #8C756B;
+    }
+  }
+
+  .card {
+    background-color: #241C18;
+    border-color: #3D2E27;
+    color: #F5EBE6;
+  }
+
+  .card-normal {
+    background-color: #241C18;
+    border-color: #3D2E27;
+  }
+
+  .card-shadow {
+    background-color: #241C18;
+    box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .card-gradient {
+    background: linear-gradient(135deg, #2E241E 0%, #1A1412 100%);
+    border-color: #3D2E27;
+    color: #F5EBE6;
+  }
   
+  .bg-gradient-pastel {
+    background: linear-gradient(135deg, #241C18 0%, #181311 100%) !important;
+  }
+
   body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
   }
 }
+
+
 

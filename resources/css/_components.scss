@@ -53,16 +53,26 @@
 .at-nav-link {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.85rem;
   color: var(--bs-body-color);
   text-decoration: none;
-  border-radius: var(--bs-border-radius);
+  border-radius: 12px;
   font-weight: 500;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: all 0.2s ease;
 
-  &:hover, &.active {
-    background-color: rgba(var(--bs-primary-rgb), 0.1);
-    color: var(--bs-primary);
+  &:hover {
+    background-color: #e8f2f6;
+    color: #2D3748;
+    transform: translateX(2px);
+    box-shadow: 0 2px 8px rgba(45, 55, 72, 0.05);
+  }
+
+  &.active {
+    background: linear-gradient(135deg, #91C8E4 0%, #76b1cf 100%);
+    color: #1E293B;
+    font-weight: 600;
+    border: 1px solid #76b1cf;
+    box-shadow: 0 4px 12px rgba(145, 200, 228, 0.3);
   }
 
   .at-nav-icon {
@@ -91,11 +101,11 @@
     font-size: 0.8125rem;
     color: var(--bs-secondary-color);
     text-decoration: none;
-    border-radius: var(--bs-border-radius-sm);
+    border-radius: 8px;
 
     &:hover, &.active {
-      color: var(--bs-primary);
-      background-color: rgba(var(--bs-primary-rgb), 0.08);
+      color: #2D3748;
+      background-color: #e8f2f6;
     }
   }
 }
@@ -105,13 +115,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.375rem;
-  height: 2.375rem;
-  border-radius: var(--bs-border-radius);
-  background-color: var(--bs-light);
-  color: var(--bs-body-color);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #91C8E4 0%, #76b1cf 100%);
+  color: #1E293B;
+  border: 1px solid #76b1cf;
   font-weight: 600;
   font-size: 0.875rem;
+  box-shadow: 0 2px 6px rgba(145, 200, 228, 0.3);
 }
 
 // Responsive behavior
@@ -128,4 +140,26 @@
       transform: translateX(0);
     }
   }
+}
+
+// Explicit Button Text Color overrides based on background brightness
+.btn-dark, .btn-secondary {
+  color: #FFFFFF !important;
+}
+
+.btn-primary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-light {
+  color: #1E293B !important;
+}
+
+.btn-outline-dark:hover, .btn-outline-secondary:hover {
+  color: #FFFFFF !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-success:hover, .btn-outline-danger:hover, .btn-outline-warning:hover, .btn-outline-info:hover, .btn-outline-light:hover {
+  color: #1E293B !important;
+}
+
+// Badges and Alerts text color
+.badge, .alert {
+  color: #1E293B !important;
 }
